@@ -25,7 +25,7 @@ RUN apk --no-cache add \
         build-base && \
     pip install --upgrade pip wheel && \
     pip install --upgrade cryptography cffi && \
-    pip install ansible==9.0 && \
+    pip install ansible==2.9 && \
     pip install mitogen==0.2.10 ansible-lint==6.22.0 jmespath && \
     pip install --upgrade pywinrm && \
     apk del build-dependencies && \
