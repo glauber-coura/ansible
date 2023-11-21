@@ -10,6 +10,8 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  ANSIBLE_CORE_VERSION: ${{ secrets.ANSIBLE_CORE_VERSION }}
+  ANSIBLE_LINT: ${{ secrets.ANSIBLE_LINT }}
 
 # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
 jobs:
