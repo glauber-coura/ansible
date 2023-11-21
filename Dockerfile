@@ -6,8 +6,7 @@ ARG ANSIBLE_LINT
 ENV ANSIBLE_LINT ${ANSIBLE_LINT}
 ENV ANSIBLE_CORE ${ANSIBLE_CORE_VERSION}
 
-RUN CARGO_NET_GIT_FETCH_WITH_CLI=1 && \
-    apk --no-cache add \
+RUN apk --no-cache add \
         sudo \
         python3\
         py3-pip \
