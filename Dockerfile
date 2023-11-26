@@ -28,6 +28,7 @@ RUN apk --no-cache add \
     pip install ansible==2.9 && \
     pip install mitogen==0.2.10 ansible-lint==6.22.0 jmespath && \
     pip install --upgrade pywinrm && \
+    pip install pymysql && \
     apk del build-dependencies && \
     rm -rf /var/cache/apk/* && \
     rm -rf /root/.cache/pip && \
