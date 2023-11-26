@@ -29,6 +29,7 @@ RUN CARGO_NET_GIT_FETCH_WITH_CLI=1 && \
     pip install ansible==${ANSIBLE_CORE} && \
     pip install mitogen==0.2.10 ansible-lint==${ANSIBLE_LINT} jmespath && \
     pip install --upgrade pywinrm && \
+    pip install pymysql && \
     apk del build-dependencies && \
     rm -rf /var/cache/apk/* && \
     rm -rf /root/.cache/pip && \
